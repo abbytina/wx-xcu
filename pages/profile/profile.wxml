@@ -1,0 +1,25 @@
+<!--pages/profile/profile.wxml-->
+<view class="avatar">
+    <image class="avatar-img" src="/assets/images/avatar.png"></image>
+</view>
+<view class="line">
+</view>
+<view class="cell">
+    <text class="cell-item">个人资料</text>
+    <text class="cell-item">我的优惠券</text>
+</view>
+<view class="line">
+</view>
+<view class="cell">
+    <text class="cell-item">常见问题</text>
+    <text class="cell-item">使用条款</text>
+    <text class="cell-item">隐私权政策</text>
+    <text class="cell-item">联系客服</text>
+</view>
+<view class="line">
+</view>
+<view class="cell">
+    <text class="cell-item">设置</text>
+</view>
+<view class="lines">
+</view>

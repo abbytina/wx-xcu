@@ -1,0 +1,10 @@
+<!--pages/message/message.wxml-->
+<view class="card">
+    <navigator class="card-link" wx:for="{{messageList}}" wx:key="id">
+        <text class="card-title">{{item.title}}</text>
+        <text class="cart-date mb20 bd-l">{{item.date}}</text>
+        <image class="card-img mb20" mode="aspectFill" src="{{item.image}}"></image>
+        <text class="card-desc mb20 bd-l">{{item.desc}}</text>
+        <text class="card-read arrow">Read All</text>
+    </navigator>
+</view>

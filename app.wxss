@@ -1,0 +1,119 @@
+/**app.wxss**/
+
+/**  1.右边框  **/
+
+.bd-r {
+    position: relative;
+}
+
+.bd-r::after {
+    position: absolute;
+    right: 0;
+    content: "";
+    width: 1rpx;
+    height: 100%;
+    background-color: #eee;
+}
+
+/**  2.栅格系统的封装 **/
+
+.row {
+    display: flex;
+}
+
+/* 自动分配 */
+
+.row .col {
+    flex: 1;
+}
+
+/* 栅格2份 */
+
+.row .col-50 {
+    flex: 0 0 50%;
+}
+
+/* 栅格3份 */
+
+.row .col-33, .row .col-34 {
+    flex: 0 0 33.33333%;
+}
+
+/* 栅格4份 */
+
+.row .col-25 {
+    flex: 0 0 25%;
+}
+
+/* 栅格5份 */
+
+.row .col-20 {
+    flex: 0 0 20%;
+}
+
+/* 换行排列 */
+
+.row-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/**   下边框线  **/
+
+.bd-l {
+    border-bottom: 1px solid #eee;
+}
+
+/** magin距离 **/
+
+.mt20 {
+    margin-top: 20rpx;
+}
+
+.mb20 {
+    margin-bottom: 20rpx;
+}
+
+/** 箭头 **/
+
+.arrow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrow::after {
+    content: "";
+    width: 15rpx;
+    height: 15rpx;
+    border-width: 3rpx 3rpx 0 0;
+    border-style: solid;
+    border-color: #cdcdcd;
+    transform: rotate(45deg);
+    display: block;
+}
+
+/**线**/
+
+.line {
+    height: 20rpx;
+    background-color: #f0f0f0;
+}
+
+/**实现五星好评的评分布局**/
+
+.shop-star {
+    position: relative;
+    width: 153rpx;
+}
+
+.star-before {
+    color: #9fb3c7;
+    position: absolute;
+}
+
+.star-after {
+    overflow: hidden;
+    color: #eb5339;
+    position: absolute;
+}

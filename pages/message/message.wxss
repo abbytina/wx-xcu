@@ -1,0 +1,34 @@
+/* pages/message/message.wxss */
+
+.card .card-link {
+    display: flex;
+    flex-direction: column;
+    border: 1rpx solid #ddd;
+    border-radius: 15rpx;
+    padding: 30rpx 30rpx;
+    margin: 50rpx 30rpx;
+}
+
+.card-title {
+    font-size: 20px;
+    color: #2c364d;
+}
+
+.cart-date {
+    font-size: 14px;
+    color: #98a5ae;
+}
+
+.card-img {
+    background-size: contain;
+}
+
+.card-desc {
+    font-size: 16px;
+    color: #434343;
+}
+
+.card-read {
+    font-size: 16px;
+    color: #43373e;
+}

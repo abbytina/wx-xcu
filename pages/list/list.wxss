@@ -1,0 +1,42 @@
+/* pages/list/list.wxss */
+.shop {
+    display: flex;
+    padding: 30rpx 20rpx;
+    border-bottom: 1px solid #eee;
+     position: relative;
+}
+
+.shop-img {
+    width: 160rpx;
+    height: 160rpx;
+}
+
+.shop-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20rpx;
+}
+
+.shop-store {
+    font-size: 16px;
+}
+
+.shop-number {
+    font-size: 14px;
+    color: #6e90a2;
+}
+
+.shop-address {
+    font-size: 14px;
+    color: #6e90a2;
+}
+
+.shop-time {
+    font-size: 14px;
+    color: #6e90a2;
+}
+
+.shop-star {
+    position: absolute;
+    right: 20rpx;
+}

@@ -1,0 +1,25 @@
+<!--index.wxml-->
+<view class="swiper">
+    <swiper indicator-dots="false" autoplay="false" interval="5000" duration="1000">
+        <swiper-item wx:for="{{slideList}}" wx:id="id" wx:if="{{item.image}}">
+            <image src="{{item.image}}" class="slide-image" mode="aspectFill"/>
+        </swiper-item>
+    </swiper>
+</view>
+<view class="pic-nav">
+    <navigator wx:for="{{navList}}" wx:key="id" wx:if="{{item.name}}" class="item bd-r" url="/pages/list/list/">
+        <image src="{{item.icon}}"></image>
+        <text>{{item.name}}</text>
+    </navigator>
+    <navigator class="item bd-r">
+    <text>更多>></text>
+    </navigator>
+</view>
+<view class="row">
+    <navigator class="col col-50">
+        <image src="/assets/images/link-01.png"></image>
+    </navigator>
+    <navigator class="col col-50">
+        <image src="/assets/images/link-02.png"></image>
+    </navigator>
+</view>
